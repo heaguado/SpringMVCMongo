@@ -5,7 +5,15 @@
   <version>${project.version}</version>
   <packaging>${project.packaging}</packaging>
   
-  
+  <repositories>
+  <repository>
+    <id>spring-milestone</id>
+    <name>Spring Maven MILESTONE Repository</name>
+    <url>http://repo.springsource.org/libs-milestone</url>
+  </repository>
+</repositories>
+
+
     <properties>
 
 		<!-- Generic properties -->
@@ -67,13 +75,37 @@
 			<scope>provided</scope>
 		</dependency>
 	
+		<!-- MongoDB Connector -->
+		<dependency>
+		    <groupId>org.springframework.data</groupId>
+		    <artifactId>spring-data-mongodb</artifactId>
+		    <version>1.1.0.RELEASE</version>
+		  </dependency>
+  
 		<!-- Spring and Transactions -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-tx</artifactId>
 			<version>${spring-framework.version}</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring-framework.version}</version>
+		</dependency>
 
+		<dependency>
+	        <groupId>org.springframework</groupId>
+	        <artifactId>spring-beans</artifactId>
+	        <version>${spring-framework.version}</version>
+   		</dependency>
+   		
+   		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring-framework.version}</version>
+		</dependency>
 		<!-- Logging with SLF4J & LogBack -->
 		<dependency>
 			<groupId>org.slf4j</groupId>

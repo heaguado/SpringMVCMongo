@@ -2,10 +2,16 @@ package es.johnnyRey.springmvcmongo.web.beans;
 
 public class UserBean {
 
+	private String id;
 	private String name;
 	private String surname;
 	private String age;
 	
+	
+	
+	public String getId() {
+		return id;
+	}
 	
 	public String getName() {
 		return name;
